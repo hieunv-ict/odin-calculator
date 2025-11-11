@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.display{
+    height: 30px;
+    width: 250px;
+    background-color: lightgray;
+    font-size: 32px;
+    text-align: right;
+    padding: 10px 10px;
+}
+
+.calculator{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 240px;
+    flex-wrap: wrap;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+}
+
+.clear-btn{
+    width: 100px;
+    height: 50px;
+}
