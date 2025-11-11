@@ -25,14 +25,6 @@ function divide(a, b){
     return a / b;
 }
 
-let a = 5.5;
-let b = 4;
-
-// console.log(add(a,b));
-// console.log(subtract(a,b));
-// console.log(multiply(a,b));
-// console.log(divide(a,b));
-
 function operate(num1, num2, opr){
     switch(opr){
         case "+":
@@ -219,13 +211,11 @@ function display(content){
     let num = Number(content);
     if (Math.ceil(num) > num){
         content = (Math.round(num * 1000000) / 1000000).toFixed(6);
-        console.log(content);
     }
     let displayContent = displayContainer.textContent;
     displayContent = displayContent + content;
     displayContainer.textContent = displayContent;
-
-    console.log(operand1 + " " + operator + " " + operand2);
+    //console.log(operand1 + " " + operator + " " + operand2);
 }
 
 function displayUndoContent(){
@@ -235,5 +225,5 @@ function displayUndoContent(){
     displayContent = arr.join("");
     console.log(displayContent);
     displayContainer.textContent = displayContent;
-    console.log(operand1 + " " + operator + " " + operand2);
+    //console.log(operand1 + " " + operator + " " + operand2);
 }
